@@ -99,17 +99,6 @@ The **Spotify API** was integrated to fetch **live song recommendations.**
 
 ---
 
-## 🎯 Next Steps & Roadmap  
-📌 **Short-Term Goals:**  
-- [ ] Improve Recommendation Filtering Using Hybrid Methods.  
-- [ ] Optimize Spotify API Queries for Better Song Fetching.  
-- [ ] Deploy a Web-Based User Interface (Flask/FastAPI).  
-
-📌 **Long-Term Goals:**  
-- [ ] Add User Feedback Loop for **Personalized Reinforcement Learning.**  
-- [ ] Integrate **Collaborative Filtering** for real-world user preferences.  
-- [ ] Scale the system with **AWS Lambda & Serverless APIs.**  
-
 ---
 
 ## 🌟 Why This Project Matters  
