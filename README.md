@@ -1,5 +1,4 @@
-
-# Music Therapy : A Data-Driven Personalized Recommendation System
+# 🎵 Music Therapy & Mental Wellness: A Data-Driven Personalized Recommendation System
 
 ---
 
@@ -12,12 +11,39 @@ This project explores how **data science** and **machine learning** can personal
 ## Project Workflow
 
 1. **Dataset Loading and Cleaning**
+   - Mental health survey dataset with emotional indicators (Anxiety, Depression, Insomnia, OCD) and music behaviors.
+   - Standardized genre names, encoded categorical features, handled missing values.
+   - Engineered new features like Genre Diversity Score.
+
 2. **Exploratory Data Analysis (EDA)**
+   - Analyzed relationships between mental health scores and favorite genres.
+   - Investigated BPM (tempo) patterns, exploratory behavior, and genre preferences.
+   - Visualized demographic trends across age groups and behaviors.
+
 3. **Listener Segmentation**
+   - Applied KMeans clustering to create user segments:
+     - Low-Stress Chill Listeners
+     - Moderate Familiar Listeners
+     - High-Affect Exploratory Listeners
+   - Visualized clusters using PCA.
+
 4. **Music Impact Prediction**
+   - Built ML models (Logistic Regression, Random Forest, XGBoost) to predict emotional outcomes:
+     - Improve / No Effect / Worsen
+   - Tuned hyperparameters and balanced dataset to improve fairness and macro F1-score.
+   - Achieved 91% accuracy and strong minority class sensitivity with XGBoost.
+
 5. **Recommendation System Development**
+   - **Content-Based Filtering**: Matched user emotional-behavioral profile with genre profiles using cosine similarity.
+   - **Collaborative Filtering**: Recommended genres based on peer users with similar emotional and listening traits.
+   - **Hybrid Filtering**: Combined content and collaborative scores (60/40 weighting) to create balanced, empathetic recommendations.
+
 6. **Real-Time Track Fetching**
+   - Integrated **Spotify Web API** to fetch top 10 live tracks for each recommended genre.
+
 7. **Web Application**
+   - Built a full **Flask web app** running inside Jupyter Notebook.
+   - Designed a dark-themed, Spotify-inspired UI for genre and track recommendations.
 
 ---
 
@@ -32,7 +58,7 @@ This project explores how **data science** and **machine learning** can personal
 
 ---
 
-## 📊 Key Achievements
+## Key Achievements
 
 | Task                         | Outcome                                    |
 | ---------------------------- | ----------------------------------------- |
@@ -54,6 +80,3 @@ This project explores how **data science** and **machine learning** can personal
 ---
 
 # "Data gave the insight. Music gave it meaning."
-"""
-
-print(summary)
