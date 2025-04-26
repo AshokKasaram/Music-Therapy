@@ -1,107 +1,60 @@
-# 🎵 AI-Powered Music Therapy Recommendation System 🎵  
-🔬 **Leveraging AI & Machine Learning to Personalize Music for Mental Wellness**  
-
-## 🌟 Project Overview  
-This project explores the **relationship between music preferences and mental health** to build an **AI-powered music therapy system** that recommends **emotionally supportive songs.**  
-
-By analyzing **listening habits, mental health conditions (Anxiety, Depression, Insomnia, OCD), and genre preferences**, the system generates **data-driven, personalized playlists** designed to **improve mood and well-being.**  
-
-✅ **Predicts optimal music genres based on mental health data.**  
-✅ **Fetches real-time song recommendations via Spotify API.**  
-✅ **Uses Machine Learning, Content-Based & Collaborative Filtering for AI-driven recommendations.**  
-✅ **Designed for future deployment using Flask/FastAPI with cloud hosting (AWS/GCP).**  
+# Auto-generate Project Summary
+summary = """
+# Music Therapy & Mental Wellness: A Data-Driven Personalized Recommendation System
 
 ---
 
-## 🔥 Features & Implementation  
-
-### 📌 1. Data Collection & Cleaning  
-- **Dataset:** The **MUSIC THERAPY DATASET** contains **listening habits, genre preferences, streaming platform choices, and self-reported mental health conditions.**  
-- **Preprocessing Steps:**  
-  - Missing values handled using **median (for numerical data) and mode (for categorical data).**  
-  - Categorical variables encoded (**Yes/No responses mapped to 1/0**).  
-  - Frequency-based responses standardized (**Never → 0, Rarely → 1, Frequently → 3, etc.**).  
+## Project Motivation
+Music is a powerful emotional tool, often used for stress relief, mood regulation, and mental support.  
+This project explores how **data science** and **machine learning** can personalize music recommendations based on **mental health profiles** and **listening behaviors**, aiming to **enhance emotional wellness through tailored musical experiences**.
 
 ---
 
-### 📊 2. Exploratory Data Analysis (EDA) & Key Insights  
-- **Correlations analyzed** between **music preferences and mental health conditions.**  
-- **Key Findings:**  
-  - **Rock & Pop** are the most preferred genres.  
-  - **Latin & Gospel music are linked to lower anxiety levels.**  
-  - **Rock, Hip-Hop, and EDM are associated with higher anxiety and depression.**  
-  - **Classical music listeners reported lower depression scores (calming effect).**  
-  - **Excessive music listening (12+ hours) correlates with higher anxiety and depression.**  
-  - **Spotify dominates as the most-used platform (ideal for therapy interventions).**  
+## Project Workflow
 
-📌 **These insights were incorporated into feature engineering for improved model accuracy.**  
+1. **Dataset Loading and Cleaning**
+2. **Exploratory Data Analysis (EDA)**
+3. **Listener Segmentation**
+4. **Music Impact Prediction**
+5. **Recommendation System Development**
+6. **Real-Time Track Fetching**
+7. **Web Application**
 
 ---
 
-### 🔍 3. Feature Engineering & Machine Learning  
-New features were created to enhance model performance:  
-- 🎵 **Listening Intensity:** Average listening hours per day * genre preference scores.  
-- 🎶 **Relaxing vs. Energetic Music Preference:** Aggregate score of calm genres (Classical, Jazz, Lofi) vs. high-energy genres (Rock, Hip-Hop, EDM).  
-- 📊 **Total Genre Engagement:** Sum of all frequency-based genre scores.  
+## Technologies Used
 
-These features were used to train multiple machine learning models.  
-
----
-
-### 🧠 4. Multi-Model Machine Learning Approach  
-A **multi-model approach** was implemented to predict **music genres based on mental health factors.**  
-
-🏆 **Models Implemented & Evaluated:**  
-1️⃣ **Random Forest** 🌲  
-2️⃣ **K-Nearest Neighbors (KNN)** 🔵  
-3️⃣ **Neural Networks (Deep Learning - TensorFlow/Keras)** 🧠  
-4️⃣ **XGBoost (Best Performing Model 🎯)** ✅  
-
-📌 **Final Model Choice:** **XGBoost** (Best F1-score: **0.9800**).  
-📌 **Dynamic Thresholding:** Fine-tuned genre selection using **precision-recall tradeoffs** to prevent overfitting.  
+- **Python**: Pandas, NumPy, Scikit-learn, XGBoost
+- **Machine Learning**: Classification, Clustering, Cosine Similarity
+- **Web Development**: Flask, HTML, CSS (Spotify-styled UI)
+- **Spotify API**: Real-time genre-to-track mapping
+- **Visualization**: Matplotlib, Seaborn
+- **Interactive Deployment**: Flask + Webbrowser (inside Notebook)
 
 ---
 
-### 🔗 5. Hybrid Music Recommendation System  
-A **hybrid recommendation system** was designed using:  
-✅ **Content-Based Filtering** (Spotify Audio Features: Danceability, Valence, Energy, Tempo).  
-✅ **Collaborative Filtering (Planned for Future Updates).**  
-✅ **Hybrid Filtering (Mixing ML predictions & audio similarity scores).**  
+## 📊 Key Achievements
 
-📌 **Final output:** **Personalized song recommendations based on both user preferences and scientific audio analysis.**  
-
----
-
-### 🎵 6. Real-Time Song Fetching via Spotify API  
-The **Spotify API** was integrated to fetch **live song recommendations.**  
-✅ **Spotify API Authentication (OAuth2.0).**  
-✅ **Dynamic Genre-Based Song Search.**  
-✅ **Audio Feature Extraction (Danceability, Valence, Energy, Tempo, etc.).**  
-✅ **Top songs fetched with direct listening links!**  
-
-📌 **Users can either:**  
-🎧 **Manually select genres** → Fetch songs from Spotify.  
-🎧 **Use AI-based genre prediction** → Model selects the best genres → Fetch songs accordingly.  
+| Task                         | Outcome                                    |
+| ---------------------------- | ----------------------------------------- |
+| ML Modeling (XGBoost)         | 91% Accuracy, 90% Macro F1-Score          |
+| Listener Clustering           | 3 meaningful listener personas identified |
+| Hybrid Recommendation System | Balanced personal & peer-based suggestions |
+| Web Application               | Fully functional Flask app with Spotify integration |
 
 ---
 
-### 🛠 7. Project Architecture & Deployment Plans  
-🏗 **Current Architecture:**  
-- 🔹 **Python for Data Science & ML (Scikit-Learn, XGBoost, TensorFlow).**  
-- 🔹 **Spotify API for real-time music recommendations.**  
-- 🔹 **Flask/FastAPI (Planned for Deployment).**  
-- 🔹 **AWS/GCP (Planned for Scaling & Hosting).**  
+## Future Enhancements
 
-🚀 **Planned Upgrades:**  
-- ✅ **Deploy via Flask for live user interaction.**  
-- ✅ **Enhance Collaborative Filtering for User-Based Recommendations.**  
-- ✅ **Build an Interactive Web UI.**  
+- Expand the dataset with richer attributes and conduct broader surveys.
+- Integrate audio-based track-level features (valence, energy) from Spotify.
+- Add real-time feedback loop (thumbs up/down) for continuous model improvement.
+- Publicly deploy the app on cloud platforms (AWS, GCP, Heroku).
+- Explore personalized playlist generation and mood tracking.
 
 ---
 
----
+# "Data gave the insight. Music gave it meaning."
+"""
 
-## 🌟 Why This Project Matters  
-🎶 **Music therapy has proven mental health benefits, but there is no AI-driven personalization at scale.**  
-🚀 **This project combines Data Science, Machine Learning, and APIs to create a truly impactful recommendation system for mental wellness.**  
-📈 **The final goal is to develop an intelligent, AI-powered music therapy platform accessible to millions worldwide.**  
+print(summary)
