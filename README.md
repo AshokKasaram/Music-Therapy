@@ -1,5 +1,4 @@
-# Auto-generate Project Summary
-summary = """
+
 # Music Therapy & Mental Wellness: A Data-Driven Personalized Recommendation System
 
 ---
