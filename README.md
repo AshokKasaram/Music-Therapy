@@ -1,5 +1,5 @@
 
-# Music Therapy & Mental Wellness: A Data-Driven Personalized Recommendation System
+# Music Therapy : A Data-Driven Personalized Recommendation System
 
 ---
 
